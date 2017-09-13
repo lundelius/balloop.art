@@ -1,0 +1,124 @@
+@import '../../styles/variables.scss';
+
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, 1);
+    opacity: 0.4;
+    z-index: -1;
+
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+}
+
+#wbc-filter {
+    width: 95%;
+    position: relative;
+    padding: 0 2.5%;
+
+    #wbc-choose-cat {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            width: 25%;
+            display: inline-block;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .wbc-text-field {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .wbc-sub-list {
+        // min-height: 300px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .wbc-filter-item {
+            background: white;
+            padding: 0 0.3em;
+            user-select: none;
+            cursor: pointer;
+            height: 40px;
+            font-family: NowRegular;
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            padding: 0 12px;
+
+            .wbc-filter-item-name {
+                height: 100%;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        .wbc-filter-item:not(:last-child) { 
+            border-bottom: 1px solid black;
+        }
+    }
+
+    .wbc-full-button {
+        font: 14px nowRegular;
+        padding: 1em 1em;
+        text-align: center;
+        margin: 1em 0;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+hr {
+    width: 100%;
+    margin: 2em 0;
+}
+
+wbc-dropdown-filter {
+    position: relative;
+    width: 100%;
+    // padding: 0.5em 0.3em;
+    background-color: white;
+    font-size: 14px;
+    font-family: NowRegular;
+    display: inline-block;
+}
+
+wbc-dropdown-filter /deep/ input {
+    font-size: 14px;
+    font-family: NowRegular;
+}
+
+.wbc-search {
+    width: 95%;
+    position: relative;
+    padding: 0 2.5%;
+}
+
+.wbc-filter-help-text {
+    font-size: 14px;
+    font-family: "NowMedium";
+    margin-bottom: 12px;
+}
+
+.checkmark {
+    background-image: url("../../assets/img/check.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    position: relative;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: center;
+}

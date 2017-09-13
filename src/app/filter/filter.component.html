@@ -1,0 +1,29 @@
+<div class="background"></div>
+<div class="wbc-close-bar wbc-hidden-lg">
+    <span class="wbc-close-button-rel" (click)="uiService.showFilter = false">x</span>
+</div>
+<div id="wbc-filter">
+    <wbc-icon-filter></wbc-icon-filter>
+    <div class="wbc-filter-help-text">
+        {{"kategorie-HL" | translate }} &#9651;
+    </div>
+    <div class="wbc-sub-list" *ngIf="dataService.activeCat">
+        <div class="wbc-filter-help-text">
+            {{"filter-HL" | translate }} &#9661;
+        </div>
+        <ul>
+            <li class="wbc-filter-item" *ngFor="let sub of dataService.activeCat.subs" (click)="mapService.toggleSub(sub)" [ngClass]="{'active' : sub.active}">
+                <div class="wbc-filter-item-name">{{sub.name | translate }}</div>
+                <div *ngIf="sub.active" class="checkmark"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="wbc-full-button wbc-hidden-lg" (click)="uiService.showFilter = false">{{'Ergebnisse anzeigen' | translate}}</div>
+</div>
+<hr>
+<div class="wbc-search">
+    <div class="wbc-filter-help-text ort">
+        {{"search-HL" | translate }}
+    </div>
+    <wbc-dropdown-filter></wbc-dropdown-filter>
+</div>

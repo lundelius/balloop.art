@@ -1,0 +1,36 @@
+<div #dropdownFilter class="dropdownFilter__container" [class.expand]="input || hasFocus || disableCollapse">
+  <div class="search-icon">
+    <i class="fa fa-search" aria-hidden="true"> </i>
+  </div>
+  <input
+    [(ngModel)]="input"
+    (ngModelChange)="onInputChange()"
+    (focus)="onFocus($event); hasFocus = true"
+    (blur)="onBlur($event); hasFocus = false"
+    (keydown)="inputKeyHandler($event)"
+    placeholder="Adresse / Stadtteil"
+  >
+  <ul *ngIf="dropdownVisible" [@flyInOut] class="dropdownFilter-list">
+    <li class="item"
+    *ngFor="let item of filteredList; let i=index"
+    (mousedown)="selectOne(item)"
+    (mouseover)="itemIndex = i"
+    [ngClass]="{selected: i === itemIndex}"
+    >
+      <span *ngIf="item[addInfo]" class="item-addInfo">{{item[addInfo]}}</span>
+      <span>{{item[filterOnValue]}}</span>
+    </li>
+    <li class="item-isLoading" *ngIf="isLoading">
+      {{"dropdownFilter_isLoading" | translate}}
+    </li>
+    <li class="no-match-found" *ngIf="input && !isLoading && !filteredList.length">
+      {{"dropdownFilter_noMatchFoundText" | translate}}
+    </li>
+  </ul>
+  <div *ngIf="!input && hasFocus!=true" class="dropdown-expand">
+    <i class="fa fa-angle-down" aria-hidden="true"> </i>
+  </div>
+  <div *ngIf="input || hasFocus" class="dropdown-close" (click)="clearInput($event)">
+    <i class="fa fa-times" aria-hidden="true"> </i>
+  </div>
+</div>

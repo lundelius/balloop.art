@@ -1,0 +1,30 @@
+<div class="wbc-rotate-text-top-container">
+    <div class="wbc-rotate-text-top-rotator">
+        <p class="wbc-rotate-text" *ngIf="uiService.currentIndex < 3">{{'HALLO' | translate }}</p>
+    </div>
+</div>
+<ul>
+    <li>
+        <a routerLink="/start" routerLinkActive="active" title="{{'intro' | translate }}"></a>
+    </li>
+    <li>
+        <a routerLink="/balloorama" routerLinkActive="active" title="{{'main' | translate }}"></a>
+    </li>
+    <li>
+        <a routerLink="/about" routerLinkActive="active" title="{{'about' | translate }}"></a>
+    </li>
+    <li>
+        <a routerLink="/tech-art" routerLinkActive="active" title="{{'tech' | translate }}"></a>
+    </li>
+    <li>
+        <a routerLink="/friends" routerLinkActive="active" title="{{'friends' | translate }}"></a>
+    </li>
+</ul>
+
+<!-- <div class="wbc-rotate-text-bot-container">
+    <div class="wbc-rotate-text-bot-rotator">
+        <p class="wbc-rotate-text" *ngIf="uiService.currentIndex > 2">{{'down' | translate }}</p>
+    </div>
+</div> 
+
+-->

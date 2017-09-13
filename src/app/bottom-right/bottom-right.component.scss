@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.wbc-bottom-right-icon {
+    z-index: 3;
+    border-radius: 50%;
+    background-color: black;
+    &:hover {
+        background-color: $primaryBlue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+#wbc-lang-switch-list {
+    // position: absolute;
+    // bottom: 3em;
+    // right: 0;
+    z-index: 1;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        background: white;
+        border: 1px solid black;
+        margin: 0;
+        position: absolute;
+        bottom: 66px;
+        right: 0;
+
+        li {
+            border-bottom: 1px solid black;
+            text-align: center;
+            
+            padding: 0.3em 0.5em;
+
+            &:hover {
+                background: $darkBlue;
+                color: white;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $primaryBlue;
+    color: white;
+}
+
+.about-container {
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    top: 5vh;
+    left: 5vw;
+    background-color: red;
+}

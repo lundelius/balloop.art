@@ -1,0 +1,132 @@
+// :host {
+//     width: 100%
+// }
+
+// .wbc-infobox-ul {
+//     list-style: none;
+//     margin: 0 2em;
+//     background: white;
+//     padding: 0;
+//     position: relative;
+//     top: 0;
+
+//     display: flex;
+
+//     li.wbc-wide {
+//         width: 48%;
+//         float: left;
+//         flex-grow: 1;
+//         position : relative;
+//         height: 100%;
+//         .wbc-wide-devider {
+//             display: flex;
+//             width: 100%;
+//             .wbc-half {
+//                 flex-grow: 1;
+//                 width: 24%;
+//                 float: left;
+//                 img {
+//                     max-width: 100%;
+//                     max-height: 200px;
+//                 }
+//             }
+//         }
+//     }
+//     li.wbc-normal {
+//         flex-grow: 1;
+//         width: 24%;
+//         float: left;
+//     }
+// }
+
+// .wbc-mobile-info {
+//     max-height: 95VH;
+//     overflow-y: scroll;
+//     overflow-x: hidden;
+//     margin: 0 1em;
+//     background: white;
+//     .wbc-infos {
+//         padding: 1em;
+//         padding-top: 36px;
+//         img {
+//             max-height: 200px;
+//         }
+//     }
+// }
+
+
+
+// .wbc-close-button {
+//     padding: 0;
+//     width: 36px;
+//     height: 36px;
+//     text-align: center;
+//     line-height: 36px;
+//     top: 0;
+//     right: 0;
+//     background-color: white;
+// }
+
+.title {
+    font: 18px nowMedium;
+    margin: 0;
+    flex-basis: 100%;
+    border-bottom: 1px solid black;
+    height: 36px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    padding: 0 1em;
+}
+h3 {
+    font: 16px nowMedium;
+    margin: 0;
+}
+
+.col_1 {
+    h2 {
+        line-height: 3em;
+    }
+    .pic {
+        max-width: 100%;
+        max-height: 20vh;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.col_3,
+.col_4 {
+    flex: 1.5;
+}
+
+.wbc-triple-button {
+    border-top: 1px solid black;
+    padding: 6px 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    a {
+        margin: 3px;
+        border-radius: 50%;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .mail {
+        background-image: url("../../assets/img/infobox_mail.png");
+    }
+
+    .map {
+        background-image: url("../../assets/img/infobox_map.png");
+    }
+
+    .tel {
+        background-image: url("../../assets/img/infobox_tel.png");
+    }
+}

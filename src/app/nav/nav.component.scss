@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+
+:host {
+    pointer-events: none;
+}
+
+.wbc-rotate-text-top-container {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    pointer-events: none;
+
+        .wbc-rotate-text-top-rotator {
+            transform: rotate(90deg);
+            transform-origin: right center;
+            text-align: right;
+        }
+}
+
+.wbc-rotate-text-bot-container {
+    position: absolute;
+    bottom: -1em;
+    right: 1em;
+    pointer-events: none;
+
+        .wbc-rotate-text-bot-rotator {
+            transform: rotate(90deg) translateX(100%);
+            transform-origin: right center;
+            text-align: left;
+        }
+}
+
+
+.wbc-rotate-text,
+.wbc-rotate-text {
+    white-space: nowrap;
+    margin: 0;
+    line-height: 20px;
+    font-family: nowMedium;
+    font-size: 20px;
+    bottom: -2px;
+    position: relative;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+
+    li {
+        a {
+            margin: 0.8em;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background: black;
+            display: inline-block;
+            border: 1px solid black;
+            pointer-events: all;
+
+            &.active {
+                background: white;
+            }
+        }
+
+    }
+    li:nth-child(-n + 2):hover {
+        a {
+            background: $primaryRed;
+        }
+    }
+    li:nth-child(-n - 2):hover {
+        a {
+            background: $primaryBlue;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+:host {
+    width: 100%;
+    .wbc-footer,
+    .wbc-impressum {
+        background: $primaryBlue;
+        padding: 1em;
+        height: 30vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.footer-buttons{
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: white;
+    padding: 0.3em 0.3em;
+    right: 0px;
+    z-index: -1;
+    width: 115px;
+
+    &:hover{
+        cursor: pointer;
+        background: $primaryBlue;
+    }
+}
+
+#wbc-show-footer-button,
+#wbc-show-impressum-button {
+    text-align: center;
+}
+
