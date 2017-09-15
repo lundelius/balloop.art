@@ -4,7 +4,7 @@
     width: 100%;
     .wbc-footer,
     .wbc-impressum {
-        background: $primaryBlue;
+        background: $primaryColor;
         padding: 1em;
         height: 30vh;
         width: 100%;
@@ -26,7 +26,7 @@
 
     &:hover{
         cursor: pointer;
-        background: $primaryBlue;
+        background: $primaryColor;
     }
 }
 

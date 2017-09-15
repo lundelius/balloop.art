@@ -5,7 +5,7 @@
     border-radius: 50%;
     background-color: black;
     &:hover {
-        background-color: $primaryBlue;
+        background-color: $primaryColor;
         color: white;
         cursor: pointer;
     }
@@ -34,7 +34,7 @@
             padding: 0.3em 0.5em;
 
             &:hover {
-                background: $darkBlue;
+                background: darkPrimaryColor;
                 color: white;
             }
 
@@ -46,7 +46,7 @@
 }
 
 .active {
-    background-color: $primaryBlue;
+    background-color: $primaryColor;
     color: white;
 }
 

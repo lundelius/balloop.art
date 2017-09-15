@@ -1,4 +1,7 @@
 @import 'styles/variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
 
 @font-face {
   font-family: NowRegular;
@@ -38,8 +41,22 @@ img {
   -webkit-touch-callout: none;
 }
 
-.headline {
-    font-family: NowBlack;
+// .headline {
+//     font-family: NowBlack;
+//     position: relative;
+//     top: 12%;
+//     left: 20%;
+//     font-size: 75px;
+//     max-width: 80%;
+//     padding-bottom: 14vh;
+
+//     @media screen and (max-width: 768px){
+//         font-size: 10vw;
+//     }
+// }
+
+.headline2 {
+    font-family: 'Varela Round', sans-serif;
     position: relative;
     top: 12%;
     left: 20%;
@@ -48,11 +65,11 @@ img {
     padding-bottom: 14vh;
 
     @media screen and (max-width: 768px){
-        font-size: 10vw;
+        font-size: 14vw;
     }
 }
 
-.sub-headline {
+/* .sub-headline {
     font-family: NowBlack;
     position: relative;
     top: 12%;
@@ -63,6 +80,19 @@ img {
 
     @media screen and (max-width: 768px){
         font-size: 10vw;
+    } */
+
+.sub-headline2 {
+    font-family: 'Varela Round', sans-serif;
+    position: sticky;
+    top: 12%;
+    left: 20%;
+    font-size: 75px;
+    max-width: 80%;
+    padding-bottom: 14vh;
+
+    @media screen and (max-width: 768px){
+        font-size: 6vw;
     }
 }
 
@@ -287,40 +317,40 @@ wbc-donate-start {
 wbc-buy-start {
     .wbc-image-title-container {
         &:hover{
-            color: $primaryBlue;
+            color: $primaryColor;
         }
     }
 }
 
 #wbc-buy-map {
     .wbc-color {
-            color: $primaryBlue !important;
+            color: $primaryColor !important;
     }
     .wbc-filter-item.active {
-        background: $primaryBlue !important;
+        background: $primaryColor !important;
         color: white;
     }
     wbc-icon-filter {
         .active {
-            background: $primaryBlue !important; 
+            background: $primaryColor !important; 
         }
     }
     .wbc-infobox-ul {
         h2 {
-            color: $primaryBlue;
+            color: $primaryColor;
         }
     }
     .wbc-filter-item:hover {
-        background: $darkBlue !important;
+        background: darkPrimaryColor !important;
         color: white;
     }
 
     .wbc-full-button:hover {
-        background: $primaryBlue !important;
+        background: $primaryColor !important;
     }
 
     .wbc-icons-filter:hover {
-        background-color: $darkBlue !important;
+        background-color: darkPrimaryColor !important;
     }
 
 }

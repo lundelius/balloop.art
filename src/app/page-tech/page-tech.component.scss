@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+:host {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #010101;
+
+    span {
+        color: $quietsch;
+    }
+}
+
+
+.video-tech-art {
+    width: 20%;
+    margin: 0 auto;
+}

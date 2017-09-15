@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 :host {
-    pointer-events: none;
+    pointer-events: none; 
 }
 
 .wbc-rotate-text-top-container {
@@ -53,13 +53,13 @@ ul {
             border-radius: 50%;
             width: 10px;
             height: 10px;
-            background: black;
+            background: #0192BF;
             display: inline-block;
             border: 1px solid black;
             pointer-events: all;
 
             &.active {
-                background: white;
+                background: $primaryColor;
             }
         }
 
@@ -71,7 +71,7 @@ ul {
     }
     li:nth-child(-n - 2):hover {
         a {
-            background: $primaryBlue;
+            background: $primaryColor;
         }
     }
 }
